@@ -1,18 +1,1046 @@
-<!doctype html>
-<html>
-<head>
-    <title>Test Page</title>
 
-    <meta charset="utf-8" />
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ace Haidrey - Interactive Resume</title>
+      <meta charset="utf-8">
+      <meta http-equiv="content-type" content="text/html">
+      <meta http-equiv="content-script-type" content="text/javascript">
+      <meta http-equiv="content-style-type" content="text/css">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+      <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="assets/css/style.css">
+
+
+      <link rel="shortcut icon" href="http://faviconist.com/icons/b19e2a213bbbc777e180ee045ed8ecdc/favicon.ico" />
+  </head>
+  <body data-spy="scroll" data-target="#navbar-example" class="">
+    <!-- Navbar -->
+    <nav id="navbar-example" role="navigation" class="navbar navbar-default navbar-fixed-top">
+
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li class=""><a href="#me">About</a></li>
+          <li class=""><a href="#experiences">Experiences</a></li>
+          <li class=""><a href="#skills">Skills</a></li>
+          <li class=""><a href="#passions">Interests</a></li>
+          <li class=""><a href="#projects">Projects</a></li>
+          <li class=""><a href="#contact">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class=""><a href="#">Ace</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+
+    <!-- Home Section -->
+    <div id="home" class="jumbotron" data-src="assets/img/bg.jpeg">
+      <div class="container">
+        <h1>Ace Haidrey</h1>
+        <hr>
+        <p class="lead">Interactive Resume</p>
+      </div>
+      <div id="continue">
+        <a href="#me"><span class="glyphicon glyphicon-menu-down" id="bounce"></span></a>
+        <!-- <p>Click anywhere to continue!</p> -->
+        <p>Scroll down to continue!</p>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="about">
+      <div class="container" id="me">
+        <h2>Profile</h2>
+        <hr>
+        <div class="row">
+          <div class="col-md-4">
+            <h3> About me </h3>
+            <p> I am a 4th year student at the University of California, Berkeley, studying Electrical Engineering &amp; Computer Science. I aspire to become a full-stack engineer, to get involved in both front end and back end development. I love to build and I love to learn new applications. On my free time I like to learn new development tools from edX, Coursera, or Codecademy, and outside of CS, I like to stay outdoorsy and explore the Bay Area. You can find out more about me in the <a href="#passions">interests</a> section! </p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="assets/img/me.png" class="img-circle"/>
+          </div>
+          <div class="col-md-4">
+            <h3>Information</h3>
+            <p id="info">
+              <strong>Name:</strong> <br> Ace Haidrey <br>
+              <strong>Age:</strong><br> 21 <br>
+              <strong>Ethnicity:</strong><br> Middle Eastern <br>
+              <strong>Location:</strong><br> Berkeley, CA, USA <br>
+              <strong>Occupation:</strong><br> Student <br>
+              <strong>Expected Graduation:</strong><br> May, 2016 <br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experiences Section -->
+    <div class="container" id="experiences">
+      <h2> Experiences </h2>
+      <hr>
+      <h3> Education </h3>
+      <div class="education">
+        <div class="edu row">
+          <div class="col-md-4">
+            <h4>Woodbridge High</h4>
+            <h5>Irvine, CA, USA</h5>
+            <p>Sept 2008 - Jun 2012</p>
+          </div>
+          <div class="col-md-8">
+            <p>
+              <span class="degree"><strong> High School Diploma </strong> </span> <br>
+               It was during these years where I became fascinated with Math, Science, and Technology. When all was said and done, I was a 4-year letterman in basketball, I finished in the top 3% of my graduating class, and won the Elks Scholarship, the Disney Scholarship, and the JLOCC Scholarship leading into college.
+            </p>
+          </div>
+        </div>
+
+        <div class="edu row">
+          <div class="col-md-4">
+            <h4>UC Berkeley</h4>
+            <h5>Berkeley, CA, USA</h5>
+            <p>Aug 2012 - May 2016</p>
+          </div>
+          <div class="col-md-8">
+            <p>
+              <span class="degree"><strong> B.S. Electrical Engineering and Computer Science, <br> B.S. Energy Engineering Minor </strong></span> <br>
+              I am a part of one of the most comprehensive undergraduate CS programs in the world, ranked as 3rd best of it's kind by U.S. News and World Report. <br>
+
+              Relevant courses that relate to my computer science degree are: Matlab <strong>(E7)</strong>, Java &amp; Data Structures <strong>(CS61B)</strong>, Computer Architecture &amp; Machine Structures <strong>(CS61C)</strong>, Discrete Math &amp; Probability Theory <strong>(CS70)</strong>, Algorithms <strong>(CS170)</strong>, Artificial Intelligence <strong>(CS188)</strong>, Web Development <strong>(CS198)</strong>, User Interface Design &amp; Development <strong>(CS160)</strong>, <em>Operating Systems <strong>(CS162)</strong> </em>, and <em>Databases <strong>(CS186)</strong> </em>. <br>
+              Courses relating to my energy and electrical engineering degrees are: Microelectronic Circuits &amp; Devices <strong>(EE40, EE105)</strong>, Structures of Signals &amp; Systems <strong>(EE20)</strong>, Photovoltaic Devices <strong>(EE134)</strong>, <em>Electric Power Systems <strong>(EE137A)</strong></em>, Thermodynamics <strong>(ME40)</strong>, Energy &amp; Society <strong>(ERG100)</strong>, and Microeconomic Theory with Environmental Resources <strong>(EEP100)</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <p id="italics"> <span id="asterick">&#42;</span> Courses in italics are currently in progress. </p>
+      <hr>
+
+      <h3>Careers</h3>
+
+      <div class="career">
+        <div class="career row">
+          <div class="col-md-4">
+            <h4>National University of Singapore</h4>
+            <h5>Singapore, Singapore</h5>
+            <p>May 2014 - Aug 2014</p>
+          </div>
+          <div class="col-md-8">
+            <p>
+              <span class="degree"><strong> Battery Research Intern </strong></span><br>
+              <ul>
+                <li><span>I was an international student intern at the Alternative Energy Lab under the supervision of Dr. Palani Balaya. The research was focused on Sodium-Ion Batteries.</span></li>
+                <li><span>The tasks I performed included slurry making, electrode fabrication, X-ray diffraction (XRD) testing, and data analysis on large datasets done using Origin and Matlab softwares. I also gained practical knowledge of how to work with others through cultural barriers.</span></li>
+                <li><span>Presented project results to Lab Director in Singapore and at the Energy Core Summit at UC Berkeley.</span></li>
+                <li><span>For more information click <a href="http://serve.me.nus.edu.sg/energy/AESL/Research.htm" target="_blank">here</a>!</span></li>
+              </ul>
+
+            </p>
+          </div>
+        </div>
+
+        <div class="career row">
+          <div class="col-md-4">
+            <h4>UC Berkeley Physical Plant</h4>
+            <h5>Berkeley, CA, USA</h5>
+            <p>Sept 2012 - Aug 2014</p>
+          </div>
+          <div class="col-md-8">
+            <p>
+              <span class="degree"><strong> Energy Systems Engineering Intern </strong></span><br>
+              <ul>
+                <li><span>Worked with the Office of Energy &amp; Sustainable Development, Physical Plant &amp; Campus Services (PPCS), Lawrence Berkeley National Laboratory (LBNL), and The Green Initiative Fund (TGIF) to do energy assessments/audits in buildings around campus.</span></li>
+                <li><span>Worked in HVAC systems to analyze and keep track of differential pressures to increase air handling unit efficiencies.</span></li>
+                <li><span>Through a two-year effort, we accumulated enough data to analyze and published a report to LBNL and Campus Directors.</span></li>
+                <li><span>Long term goal was to change the campus standard on air filters to reduce labor costs, landfill costs, and most important, energy costs.</span></li>
+                <li><span>For a more informative diagram click <a href="http://tgif.berkeley.edu/docs/air_handling_units.pdf" target="_blank">here</a>!</span></li>
+              </ul>
+            </p>
+          </div>
+        </div>
+
+        <div class="career row">
+          <div class="col-md-4">
+            <h4>Lawrence Berkeley National Lab -- <br> Auer Lab</h4>
+            <h5>Berkeley, CA, USA</h5>
+            <p>April 2013 - May 2014</p>
+          </div>
+          <div class="col-md-8">
+            <p>
+              <span class="degree"><strong> Research Assistant </strong></span><br>
+              <ul>
+                <li><span>I was part of a hair cell project. Specifically, I worked on the rootlet and tapered region to see if actin filaments connect through to the contincular plate of cochleas.</span></li>
+                <li><span>The ultimate goal was to identify the protein connecting stereocilia which may probe explanations to hearing loss and deafness attributions.</span></li>
+                <li><span>Skills obtained would include experiment preparation, TEM &amp; SEM imaging, immunogold labeling, sectioning, high pressure freezing (HPF), and creating models using Matlab software. </span></li>
+                <li><span>For more information click <a href="http://www.lbl.gov/lsd/People_&_Organization/Scientific_Staff_Directory/Auer_Lab.html" target="_blank">here</a>!</span></li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="skills">
+      <div id="skills" class="container">
+        <h2>Skills &amp; Tools</h2>
+        <hr>
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="list-unstyled">
+              <li>
+                <span class="skill-title">Matlab</span>
+                <span class="pull-right skill-stars">
+                <span class="glyphicon glyphicon-star f"></span>               
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span> 
+                <span class="glyphicon glyphicon-star f"></span>
+                </span>
+              </li>
+
+              <li>
+                <span class="skill-title">Java</span>
+                <span class="pull-right skill-stars">
+                <span class="glyphicon glyphicon-star f"></span>               
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span> 
+                <span class="glyphicon glyphicon-star e"></span>
+                </span>
+              </li>
+
+              <li>
+                <span class="skill-title">Python</span>
+                <span class="pull-right skill-stars">
+                <span class="glyphicon glyphicon-star f"></span>               
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span> 
+                <span class="glyphicon glyphicon-star e"></span>
+                </span>
+              </li>
+
+              <li>
+                <span class="skill-title">Git</span>
+                <span class="pull-right skill-stars">
+                <span class="glyphicon glyphicon-star f"></span>               
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span> 
+                <span class="glyphicon glyphicon-star e"></span>
+                </span>
+              </li>
+
+              <li>
+                <span class="skill-title">OOP</span>
+                <span class="pull-right skill-stars">
+                <span class="glyphicon glyphicon-star f"></span>               
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span> 
+                <span class="glyphicon glyphicon-star e"></span>
+                </span>
+              </li>
+
+              <li>
+                <span class="skill-title">LaTeX</span>
+                <span class="pull-right skill-stars">
+                <span class="glyphicon glyphicon-star f"></span>               
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span> 
+                <span class="glyphicon glyphicon-star e"></span>
+                </span>
+              </li>
+
+              <li>
+                <span class="skill-title">Circuit Analysis</span>
+                <span class="pull-right skill-stars">
+                <span class="glyphicon glyphicon-star f"></span>               
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span> 
+                <span class="glyphicon glyphicon-star e"></span>
+                </span>
+              </li>
+
+              <li>
+                <span class="skill-title">HTML5</span>
+                <span class="pull-right skill-stars">
+                <span class="glyphicon glyphicon-star f"></span>               
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span> 
+                <span class="glyphicon glyphicon-star e"></span>
+                </span>
+              </li>
+
+              <li>
+                <span class="skill-title">XML</span>
+                <span class="pull-right skill-stars">
+                <span class="glyphicon glyphicon-star f"></span>               
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span> 
+                <span class="glyphicon glyphicon-star e"></span>
+                </span>
+              </li>
+
+              <li>
+                <span class="skill-title">CSS3</span>
+                <span class="pull-right skill-stars">
+                <span class="glyphicon glyphicon-star f"></span>               
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span> 
+                <span class="glyphicon glyphicon-star e"></span>
+                </span>
+              </li>
+
+              <li>
+                <span class="skill-title">Android Studio</span>
+                <span class="pull-right skill-stars">
+                <span class="glyphicon glyphicon-star f"></span>               
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span> 
+                <span class="glyphicon glyphicon-star e"></span>
+                </span>
+              </li>
+
+              <li>
+                <span class="skill-title">C</span>
+                <span class="pull-right skill-stars">
+                <span class="glyphicon glyphicon-star f"></span>               
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star e"></span> 
+                <span class="glyphicon glyphicon-star e"></span>
+                </span>
+              </li>
+            </ul>
+          </div>
+
+
+
+          <div class="col-md-6">
+            <ul class="list-unstyled">
+              <li>
+                <span class="skill-title">Javascript</span>
+                <span class="pull-right skill-stars">
+                <span class="glyphicon glyphicon-star f"></span>              
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star e"></span> 
+                <span class="glyphicon glyphicon-star e"></span>
+                </span>
+              </li>
+
+              <li>
+                <span class="skill-title">JQuery</span>
+                <span class="pull-right skill-stars">
+                <span class="glyphicon glyphicon-star f"></span>               
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star e"></span> 
+                <span class="glyphicon glyphicon-star e"></span>
+                </span>
+              </li>
+
+              <li>
+                <span class="skill-title">Bootstrap Framework</span>
+                <span class="pull-right skill-stars">
+                <span class="glyphicon glyphicon-star f"></span>               
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star e"></span> 
+                <span class="glyphicon glyphicon-star e"></span>
+                </span>
+              </li>
+
+              <li>
+                <span class="skill-title">Command Line</span>
+                <span class="pull-right skill-stars">
+                <span class="glyphicon glyphicon-star f"></span>               
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star e"></span> 
+                <span class="glyphicon glyphicon-star e"></span>
+                </span>
+              </li>
+
+              <li>
+                <span class="skill-title">Apache Spark</span>
+                <span class="pull-right skill-stars">
+                <span class="glyphicon glyphicon-star f"></span>               
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star e"></span> 
+                <span class="glyphicon glyphicon-star e"></span>
+                </span>
+              </li>
+
+              <li>
+                <span class="skill-title">OpenMP</span>
+                <span class="pull-right skill-stars">
+                <span class="glyphicon glyphicon-star f"></span>               
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star e"></span> 
+                <span class="glyphicon glyphicon-star e"></span>
+                </span>
+              </li>
+
+              <li>
+                <span class="skill-title">MIPS/X86</span>
+                <span class="pull-right skill-stars">
+                <span class="glyphicon glyphicon-star f"></span>               
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star e"></span> 
+                <span class="glyphicon glyphicon-star e"></span>
+                </span>
+              </li>
+
+              <li>
+                <span class="skill-title">Logisim</span>
+                <span class="pull-right skill-stars">
+                <span class="glyphicon glyphicon-star f"></span>               
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star e"></span> 
+                <span class="glyphicon glyphicon-star e"></span>
+                </span>
+              </li>
+
+              <li>
+                <span class="skill-title">HSpice/LTSpice</span>
+                <span class="pull-right skill-stars">
+                <span class="glyphicon glyphicon-star f"></span>               
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star e"></span> 
+                <span class="glyphicon glyphicon-star e"></span>
+                </span>
+              </li>
+
+              <li>
+                <span class="skill-title">MultiSim/Labview</span>
+                <span class="pull-right skill-stars">
+                <span class="glyphicon glyphicon-star f"></span>              
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star e"></span> 
+                <span class="glyphicon glyphicon-star e"></span>
+                </span>
+              </li>
+
+              <li>
+                <span class="skill-title">Angular.js</span>
+                <span class="pull-right skill-stars">
+                <span class="glyphicon glyphicon-star f"></span>               
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star e"></span>       
+                <span class="glyphicon glyphicon-star e"></span> 
+                <span class="glyphicon glyphicon-star e"></span>
+                </span>
+              </li>
+
+              <li>
+                <span class="skill-title">PHP</span>
+                <span class="pull-right skill-stars">
+                <span class="glyphicon glyphicon-star f"></span>               
+                <span class="glyphicon glyphicon-star f"></span>       
+                <span class="glyphicon glyphicon-star e"></span>       
+                <span class="glyphicon glyphicon-star e"></span> 
+                <span class="glyphicon glyphicon-star e"></span>
+                </span>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Interests Section -->
+    <div class="interests">
+      <div class="container" id="passions">
+        <h2>Interests</h2>
+        <hr>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="assets/img/iconmonstr-puzzle-icon-256.png"/>
+          </div>
+          <div class="col-md-8">
+            <h3>Puzzles &amp; Algorithms</h3>
+            <p>One of the most rewarding feelings for me is solving a puzzle or brain teaser that has been haunting me for days. I try to solve at least one a week. If you know of any good teasers, send it to me in the <a href="#contact">contact</a> section! <br> Here's one that my friend, Ronak Vora, showed me:
+            <em> You have 8 balls, one being slightly heavier than the rest. You have a balance and can only use it twice. How do you single it out? </em></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-8">
+            <h3>Basketball</h3>
+            <p>The thrill I get from playing basketball or watching premier matchups in the NBA in unmatched. I am what I like to call a healthy obsessive who watches the game, then highlights, and then all the articles about that game I just witnessed twice. I was raised in a Lakers household (please don't let that influence you if you're debating hiring me) and will always be a die hard fan. On my free time, I try to get some pickup games in myself at the RSF. You'll see me there about twice a week!</p>
+          </div>
+          <div class="col-md-4 bball">
+            <img src="assets/img/bball.png"/>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <img src="assets/img/iconmonstr-headphones-7-icon-256.png"/>
+          </div>
+          <div class="col-md-8">
+            <h3>Music</h3>
+            <p>Johnny Depp once said, "Music touches us emotionally, where words alone can't.” As cliché as that sounds, there is a truth behind his statement. For me personally, music jump starts my day, and keeps me going until bed. Some need coffee, I just need my playlists. I listen to all genres, but I primarily stick to House/EDM. From Tiesto to Hardwell to Dzeko &amp; Torres, to my personal favorite, Kaskade, I just can't get enough. I have many playlists on <a href="https://open.spotify.com/user/128142966" target="_blank">Spotify</a> and <a href="https://soundcloud.com/ace-haidrey" target="_blank">SoundCloud</a> so feel free to check them out as well as suggest some tracks to me! </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-8">
+            <h3>Traveling</h3>
+            <p>A sad fact about me is that I've visited 20+ countries while only visiting two states, even though I've lived in U.S. my entire life. I've been throughout Europe, in London, Paris, Berlin, Amsterdam, and everything in between. I have traveled throughout the Middle East from conservative areas like Saudi Arabia, Syria, Lebanon, Jordan, to tourist attractions like Dubai. This past summer, I was also able to live in Singapore and visit all of SE Asia, which was easily the best experience of my life. In short, I look for any excuse I can find to travel. </p>
+          </div>
+          <div class="col-md-4">
+            <img src="assets/img/iconmonstr-map-2-icon-256.png"/>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <img src="assets/img/iconmonstr-tablet-4-icon-256.png"/>
+          </div>
+          <div class="col-md-8">
+            <h3>Online Learning</h3>
+            <!-- If I was able to be a profession student I'd take it in a heart beat. I have a great passion for learning, and I want to learn everything. -->
+            <p> I see education as one of the most valuable enterprises that unfortunately isn't offered to all. What keeps me optimistic about the future though is this growing community of free online educators featuring many prestigious institutes. This will enable kids in undeveloped countries to get quality education once internet becomes more readily available. In my home country of Afghanistan, over 60% of children aren't able to go to school, but the availablility of internet is steadily increasing, and kids are spending more time teaching themselves through these sites. I believe that education will solve many of the war conflicts in these areas, because it gives kids an alternative to fighting, it gives them intellect and a purpose.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Modal Project Section -->
+    <div class="modals">
+      <div id="modal-2048" class="modal fade">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h3 class="modal-title">2048</h3>
+              </div>
+                  <div class="modal-body">
+                    <p><strong>Description:</strong> I made a simple Java application to replicate the popular single-player computer game written by Gabriele Cirulli. The API for displaying the board was given to me, but I used the API to create the functionality of the game. To enforce good coding habits and clean code, I obided by a style check script provided to me.  </p>
+                    <p><strong>Skills:</strong> Java, JUnit testing, Object Oriented Programming, Clean Code</p>
+                    <!-- <p><strong>Specs:</strong> <a href="https://inst.eecs.berkeley.edu/~cs61b/fa14/hw/proj0.pdf">https://inst.eecs.berkeley.edu/~cs61b/fa14/hw/proj0.pdf</a> </p> -->
+                    <p><strong>Course &amp; Year:</strong> CS61B, Fall 2014 </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div id="modal-db61b" class="modal fade">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h3 class="modal-title">DB61B -- A Data Base</h3>
+              </div>
+                  <div class="modal-body">
+                    <p><strong>Description:</strong> A miniature relational database management system (DBMS) that stores tables of data. This system includes a simple query language of Backus-Naur Form (BNF) and grammar. I made a command control center responsible for parsing user inputs according to our query language, and assigning it the respective commands. The final output format is a .db file that I defined.
+                     <!-- Note this is for only very small databases so speed and efficiency isn't strongly considered. -->  </p>
+                    <p><strong>Skills:</strong> Java, JUnit testing, Object Oriented Programming, Clean Code, BNF Queries, Parsing, Relational DBMS </p>
+                    <!-- <p><strong>Specs:</strong> <a href="https://inst.eecs.berkeley.edu/~cs61b/fa14/hw/proj1.pdf">https://inst.eecs.berkeley.edu/~cs61b/fa14/hw/proj1.pdf</a> </p> -->
+                    <p><strong>Course &amp; Year:</strong> CS61B, Fall 2014 </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div id="modal-kjumpingcubes" class="modal fade">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h3 class="modal-title">KJumpingCubes</h3>
+              </div>
+                  <div class="modal-body">
+                    <p><strong>Description:</strong> This is a two-person pure strategy game, involving no element of chance. <!-- Every time a position is selected, another dot and player color is added to the square, and once there are more dots than neighbors, the square evenly distributes its dots onto its neighbors. If there are opponent pieces as neighbors, their squares now belong to you. --> The winning state is once the entire N x N board is filled with your color. This game can have either two human players, human vs. computer, or two computer players. The computer is based on a depth four Minimax strategy, following a simple heuristic model. A command interpreter parses the user inputs and makes changes to the board. The GUI was built using the Berkeley Interface API. </p>
+                    <p><strong>Skills:</strong> Java, JUnit testing, Object Oriented Programming, Clean Code, Minimax Algorithm, Parsing, GUI</p>
+                    <p><strong>Course &amp; Year:</strong> CS61B, Fall 2014 </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div id="modal-graphs" class="modal fade">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h3 class="modal-title">Graph Package</h3>
+              </div>
+                  <div class="modal-body">
+                    <p><strong>Description:</strong> A library package to provide facilities for manipulating graphs and for clients to use the package. It includes basic graph attributes for both directed and undirected graphs, a way to traverse a graph through BFS, DFS, or DFS post traversal, and to run shortest paths. I made two clients to use the API: one was to interpret a Makefile which is given a set of targets to rebuild, and another is a Trip Finder client which finds the shortest path between two end points given a network of roads. 
+                      <!-- Command interpreters translate the inputs for the different clients and return a list of rules or directions in an out file. --> </p>
+                    <p><strong>Skills:</strong> Java, JUnit testing, Object Oriented Programming, Clean Code, Parsing, A&#42;, Dijkstra's, and DFS/BFS Search Algorithms, creating an API</p>
+                    <p><strong>Course &amp; Year:</strong> CS61B, Fall 2014 </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div id="modal-git" class="modal fade">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h3 class="modal-title">Git</h3>
+              </div>
+                  <div class="modal-body">
+                    <p><strong>Description:</strong> My first experience writing substancial C code. A simpler spinoff of git called beargit where every commit message must contain the words "GO BEARS!", and implemented the commands init, add, rm, commit, status, log and branches. I also assigned commit ID's which only consisted of 6's, 1's, and C's. Testing was done using the CUnit framework.</p>
+                    <p><strong>Skills:</strong> C, Git, CUnit testing, Valgrind, Github </p>
+                    <p><strong>Course &amp; Year :</strong> CS61C, Spring 2015 </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div id="modal-call" class="modal fade">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h3 class="modal-title">Compiler, Assembler, Linker, Loader (C.A.L.L.)</h3>
+              </div>
+                  <div class="modal-body">
+                    <p><strong>Description:</strong> I wrote an assembler in C that translates a subset of MIPS instructions to machine code. The assembler is a two-pass assembler where the first pass strips comments, and records the address of each label in the symbol table, and the second pass is the tranlation to machine code with the relocation table. Then I wrote a linker in MIPS to combine code and relocate symbols. This generates the executable file. </p>
+                    <p><strong>Skills:</strong> C, CUnit testing, MIPS, Mars, Valgrind, Github</p>
+                    <p><strong>Course &amp; Year:</strong> CS61C, Spring 2015 </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div id="modal-cpu" class="modal fade">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h3 class="modal-title">Computer Processing Unit (CPU)</h3>
+              </div>
+                  <div class="modal-body">
+                    <p><strong>Description:</strong> Created a 32-bit two-cycle processor. The two stages for the pipeline are Instruction Fetch (IF) and Execute (EX). Used Logisim sub circuits to create an ALU and Register File, and then used those to build up the entire CPU. </p>
+                    <p><strong>Skills:</strong> Logisim, MIPS, Mars, Github</p>
+                    <p><strong>Course &amp; Year:</strong> CS61C, Spring 2015 </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div id="modal-cats" class="modal fade">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h3 class="modal-title">Performance Programming</h3>
+              </div>
+                  <div class="modal-body">
+                    <p><strong>Description:</strong> I was given a large number of 32 x 32 images, and had to figure out whether or not each of them contains a cat using a Convolutional Neural Network. The goal was to be able to identify 3000 Cats/s, and I did this by different optimization techniques such as OpenMP parallelizing for, Intel vectorizing, and SIMD loop unrolling. </p>
+                    <p><strong>Skills:</strong> C, OpenMP, Intel Intrinsics, SIMD, Github</p>
+                    <p><strong>Course &amp; Year:</strong> CS61C, Spring 2015 </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div id="modal-cnn" class="modal fade">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h3 class="modal-title">Convolutional Neural Networks (CNN)</h3>
+              </div>
+                  <div class="modal-body">
+                    <p><strong>Description:</strong> This project was to become more familiar with the MapReduce model using the Apache Spark framework. I optimized the CNN by using the MapReduce framework and then ran the implementation on a large cluster of AWS EC2 servers in order to see the process of crunching through a large problem. </p>
+                    <p><strong>Skills:</strong> Python, Apache Spark, MapReduce, Github</p>
+                    <p><strong>Course &amp; Year:</strong> CS61C, Spring 2015 </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div id="modal-tsp" class="modal fade">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h3 class="modal-title">Traveling Salesman Problem (TSP)</h3>
+              </div>
+                  <div class="modal-body">
+                    <p><strong>Description:</strong> A final project for my Algorithms course, which was a competition to solve instances of an NP-complete problem. In a team of three, we were attempting to find the best approximation for a TSP path problem where each city has a color of Red or Blue, and the path returned cannot have more than three of the same color consecutively. We modified the Christofides approximation algorithm (which guarantees getting within 1.5x the optimal solution) but forgot that we couldn't guarantee the triangle inequality. It was a failed attempt, but a good learning experience overall. </p>
+                    <p><strong>Skills:</strong> Python, NetworkX framework, Approximation Algorithms, Github </p>
+                    <p><strong>Course &amp; Year:</strong> CS170, Spring 2015 </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div id="modal-AI" class="modal fade">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h3 class="modal-title">Artificial Intelligence (AI)</h3>
+              </div>
+                  <div class="modal-body">
+                    <p><strong>Description:</strong> This project was about applying AI concepts to a Pacman agent, to help him find his paths through his maze world and collect food efficiently. First I just used search algorithms for the different scenarios. Then I implemented both minimax and expectimax searches using heuristics I defined. After that, I implemented value iteration and reinforcement learning to find the best path. The final run was using Markov Decision Processes with Bayes Nets to fend off the ghosts' attacks.
+                    <p><strong>Skills:</strong> Python, AI, Probability </p>
+                    <p><strong>Course &amp; Year:</strong> CS188, Spring 2015 </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div id="modal-mysite" class="modal fade">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h3 class="modal-title">Interactive Resume</h3>
+              </div>
+                  <div class="modal-body">
+                    <p><strong>Description:</strong> This is the first front end experience. I used a lot of Boostrap grid layout to help design my layout. I worked mainly in HTML and CSS, though some JQuery and JS were needed for smooth scrolling and modal pop-ups. I used PHP and Ajax POST method to forward the contact information to my email address. I update frequently and the next step is to make the site more responsive to scale better with mobile screens and tablets.  </p>
+                    <p><strong>Skills:</strong> HTML5, CSS3, JQuery, Javascript, Bootstrap Framework, PHP, Ajax</p>
+                    <p><strong>Course &amp; Year:</strong> Personal Project, June 2015 </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Project Section -->
+    <div class="projects">
+      <div class="container" id="projects">
+        <h2>Projects</h2>
+        <hr id="main">
+        <div class="row">
+          <div class="col-md-4">
+
+            <figure class="project">
+              <img src="assets/img/2048.png" alt="2048">
+              <figcaption>
+                <h4>2048</h4>
+                <span class="projicon">
+                  <span class="glyphicon glyphicon-resize-full"></span>
+                </span>
+              </figcaption>
+              <div class="overlay"></div>
+              <div class="overlay overlay-text" id="2048">
+                <p>A replica of the popular game.</p>
+              </div>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure class="project">
+              <img src="assets/img/dbicon.png" alt="db61b">
+              <figcaption>
+                <h4>Databases</h4>
+                <span class="projicon">
+                  <span class="glyphicon glyphicon-resize-full"></span>
+                </span>
+              </figcaption>
+              <div class="overlay"></div>
+              <div class="overlay overlay-text" id="db61b">
+                <p>A simple data base to answer table queries.</p>
+              </div>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure class="project">
+              <img src="assets/img/kjc2.jpg" alt="kjumpingcubes">
+              <div class="overlay"></div>
+              <figcaption>
+                <h4>KJumpingCubes</h4>
+                <span class="projicon">
+                  <span class="glyphicon glyphicon-resize-full"></span>
+                </span>
+              </figcaption>
+              <div class="overlay"></div>
+              <div class="overlay overlay-text" id="kjumpingcubes">
+                <p>A strategic two player game.</p>
+              </div>
+            </figure>
+          </div>
+
+
+          <div class="col-md-4">
+            <figure class="project">
+              <img src="assets/img/map.gif" alt="graphs">
+              <div class="overlay"></div>
+              <figcaption>
+                <h4>Graph Package</h4>
+                <span class="projicon">
+                  <span class="glyphicon glyphicon-resize-full"></span>
+                </span>
+              </figcaption>
+              <div class="overlay"></div>
+              <div class="overlay overlay-text" id="graphs">
+                <p>A graph API for various clients.</p>
+              </div>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure class="project">
+              <img src="assets/img/git2.png" alt="git">
+              <figcaption>
+                <h4>Git</h4>
+                <span class="projicon">
+                  <span class="glyphicon glyphicon-resize-full"></span>
+                </span>
+              </figcaption>
+              <div class="overlay"></div>
+              <div class="overlay overlay-text" id="git">
+                <p>The popular version control framework.</p>
+              </div>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure class="project">
+              <img src="assets/img/comp.gif" alt="c.a.l.l.">
+              <figcaption>
+                <h4>C.A.L.L.</h4>
+                <span class="projicon">
+                  <span class="glyphicon glyphicon-resize-full"></span>
+                </span>
+              </figcaption>
+              <div class="overlay"></div>
+              <div class="overlay overlay-text" id="call">
+                <p>A program assembler and linker.</p>
+              </div>
+            </figure>
+          </div>
+
+
+          <div class="col-md-4">
+            <figure class="project">
+              <img src="assets/img/cpu3.png" alt="cpu">
+              <figcaption>
+                <h4>CPU</h4>
+                <span class="projicon">
+                  <span class="glyphicon glyphicon-resize-full"></span>
+                </span>
+              </figcaption>
+              <div class="overlay"></div>
+              <div class="overlay overlay-text" id="cpu">
+                <p>A fully functional computer processing unit.</p>
+              </div>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure class="project">
+              <img src="assets/img/cat.jpg" alt="cats">
+              <figcaption>
+                <h4>CPU Optimization</h4>
+                <span class="projicon">
+                  <span class="glyphicon glyphicon-resize-full"></span>
+                </span>
+              </figcaption>
+              <div class="overlay"></div>
+              <div class="overlay overlay-text" id="cats">
+                <p>Classifying images using a CNN.</p>
+              </div>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure class="project">
+              <img src="assets/img/cnn.jpg" alt="convolutional neural networks">
+              <figcaption>
+                <h4>CNNs</h4>
+                <span class="projicon">
+                  <span class="glyphicon glyphicon-resize-full"></span>
+                </span>
+              </figcaption>
+              <div class="overlay"></div>
+              <div class="overlay overlay-text" id="cnn">
+                <p>Map Reduce using Apache Spark.</p>
+              </div>
+            </figure>
+          </div>
+
+
+          <div class="col-md-4">
+            <figure class="project">
+              <img src="assets/img/tsp.jpg" alt="tsp">
+              <figcaption>
+                <h4>TSP</h4>
+                <span class="projicon">
+                  <span class="glyphicon glyphicon-resize-full"></span>
+                </span>
+              </figcaption>
+              <div class="overlay"></div>
+              <div class="overlay overlay-text" id="tsp">
+                <p>An approximation to the famous TSP.</p>
+              </div>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure class="project">
+              <img src="assets/img/AI.jpg" alt="AI">
+              <figcaption>
+                <h4>Pacman</h4>
+                <span class="projicon">
+                  <span class="glyphicon glyphicon-resize-full"></span>
+                </span>
+              </figcaption>
+              <div class="overlay"></div>
+              <div class="overlay overlay-text" id="AI">
+                <p>Search problems, Markov Chains, &amp; more AI concepts.</p>
+              </div>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure class="project">
+              <img src="assets/img/mysite.png" alt="mysite">
+              <figcaption>
+                <h4>Resume</h4>
+                <span class="projicon">
+                  <span class="glyphicon glyphicon-resize-full"></span>
+                </span>
+              </figcaption>
+              <div class="overlay"></div>
+              <div class="overlay overlay-text" id="mysite">
+                <p>The site you're currently visiting.</p>
+              </div>
+            </figure>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact">
+      <div class="container" id="contact">
+        <h2>Contact</h2>
+        <hr>
+        <div class="row">
+          <div class="col-md-6" id="right">
+
+            <div id="form-messages"></div>
+
+            <form class="form-horizontal" id="ajax-contact" method="post" action="assets/php/mailer.php">
+              <div class="form-group">
+                <label for="name" id="labels" class="col-sm-2 control-label">Name<span id="asterick">&#42;</span></label>
+                <div class="col-sm-9">
+                  <input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email" id="labels" class="col-sm-2 control-label">Email<span id="asterick">&#42;</span></label>
+                <div class="col-sm-9">
+                  <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message" id="labels" class="col-sm-2 control-label">Message<span id="asterick">&#42;</span></label>
+                <div class="col-sm-9">
+                  <textarea class="form-control" name="message" id="message" rows="4" placeholder="This form is not currently working. Please use the email icon on the right. Will fix this soon!" required></textarea>
+                </div>
+              </div>
+
+<!--               <div class="form-group">
+                <label for="inputQuestion" id="labels" class="col-sm-2 control-label">1+9=<span id="asterick">&#42;</span></label>
+                <div class="col-sm-9">
+                  <input type="number" name="captcha" class="form-control" placeholder="Ten">
+                </div>
+              </div> -->
+
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-9">
+                  <button type="submit" id="submit" class="btn btn-default">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-unstyled">
+              <li><a href="mailto:ahaidrey@berkeley.edu" target="_blank"><span class="icon email"><img src="assets/img/iconmonstr-email-13-icon-256.png" width="32px" height="32px"/></span>ahaidrey@berkeley.edu</a></li>
+              <li><a href="https://www.linkedin.com/in/acehaidrey" target="_blank"><span class="icon linkedin"><img src="assets/img/iconmonstr-linkedin-5-icon-256.png" width="32px" height="32px"/></span>linkedin.com/in/acehaidrey</a></li>
+              <li><a href="https://github.com/Acehaidrey" target="_blank"><span class="icon github"><img src="assets/img/iconmonstr-github-5-icon-256.png" width="32px" height="32px"/></span>github.com/acehaidrey</a></li>
+              <li><a href="https://www.facebook.com/ace.haidrey" target="_blank"><span class="icon fb"><img src="assets/img/iconmonstr-facebook-5-icon-256.png" width="32px" height="32px"/></span>facebook.com/ace.haidrey</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <p> Copyright &#169; 2015 By Ace Haidrey. Inspired by <a href="https://dribbble.com/pascalvgemert" target="_blank">Pascal van Gemert</a> designs.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+    <!--       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>  -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    try {
+      var pageTracker = _gat._getTracker("UA-72351605-1");
+    pageTracker._trackPageview();
+    } catch(err) {}
+  </script>
     
-</head>
-
-<body>
-<div>
-    <h1>Test Page</h1>
-    <p>This is a test.</p>
-</div>
-</body>
+  </body>
 </html>
+
+
+<!-- To Do's Still -->
+
+<!-- split the skills to abilities and tools -->
+<!-- Split projects to 2 sections: school projects and side projects. Add Craiglist redesign to school projects. -->
+<!-- 1. Complete Project Section. Need a modal carousel to describe the projects and skills involved in them. -->
+<!-- 2. Figure out how to take user input data for contacts boxes, and send it to yourself via email or something. -->
+
+<!-- 7. Scrollspy and smooth scroll interfering with one another. Figure out how to fix this. -->
+<!-- maybe change close in modals to resize small glyphicon? -->
+
+<!-- Extras -->
+
+<!-- scale to mobile -->
+<!-- Want to add student groups? -->
+<!-- Quotepage -->
+<!-- Create map of places been to -->
+<!-- 3. Click anywhere to continue on main page. -->
+<!-- 4. Bouncing down arrow sign. -->
+<!-- smooth scroll to interests section from about section. also for contact section in the interest section of algorithms -->
+<!-- Analyze how many people visit the site? - google probably has something to do this. -->
+>>>>>>> 99cc918b340d0ba2015355259c7a3abcd8d84b94
